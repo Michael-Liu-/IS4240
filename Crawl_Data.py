@@ -115,16 +115,16 @@ def output_csv(tweet_list,category,filename):
 ##account10,link_pattern10 = "eFinancialNews","efinancialnews.com/"
 
 # Twitter Accounts under Category Fashion, Please use the twitter id, instead of Account name    
-account1,link_pattern1 = "Fashionista_com","bit.ly/" 
-account2,link_pattern2 = "TimesFashion","thetim.es/" 
-account3,link_pattern3 = "glamour_fashion","glmr.me/" 
-account4,link_pattern4 = "InStyle","trib.al/"
-account5,link_pattern5 = "hm","hm.info/"
-account6,link_pattern6 = "Forever21","bit.ly/"
-account7,link_pattern7 = "Topman","tpmn.co/"
-account8,link_pattern8 = "LouisVuitton","vuitton.lv/"
-account9,link_pattern9 = "Abercrombie","bit.ly/"
-account10,link_pattern10 = "Superdry","sdry.co/"
+##account1,link_pattern1 = "Fashionista_com","bit.ly/" 
+##account2,link_pattern2 = "TimesFashion","thetim.es/" 
+##account3,link_pattern3 = "glamour_fashion","glmr.me/" 
+##account4,link_pattern4 = "InStyle","trib.al/"
+##account5,link_pattern5 = "hm","hm.info/"
+##account6,link_pattern6 = "Forever21","bit.ly/"
+##account7,link_pattern7 = "Topman","tpmn.co/"
+##account8,link_pattern8 = "LouisVuitton","vuitton.lv/"
+##account9,link_pattern9 = "Abercrombie","bit.ly/"
+##account10,link_pattern10 = "Superdry","sdry.co/"
 
 # Twitter Accounts under Category Electronics, Please use the twitter id, instead of Account name    
 ##account1,link_pattern1 = "google","goo.gl/" 
@@ -144,35 +144,35 @@ account10,link_pattern10 = "Superdry","sdry.co/"
 ##account3,link_pattern3 = "educationnation","bit.ly/" 
 ##account4,link_pattern4 = "USNewsEducation","ow.ly/"
 ##account5,link_pattern5 = "GoogleForEdu","goo.gl/"
-##account6,link_pattern6 = "education","bit.yl/"
+##account6,link_pattern6 = "educationgovuk","ow.ly/"
 ##account7,link_pattern7 = "edutopia","edut.to/"
 ##account8,link_pattern8 = "HuffPostEdu","huff.to/"
 ##account9,link_pattern9 = "USATeducation","bit.ly/"
 ##account10,link_pattern10 = "NEAToday","bit.ly/"
 
 # Twitter Accounts under Category Book, Please use the twitter id, instead of Account name    
-##account1,link_pattern1 = "GuardianBooks","gu.com/" 
-##account2,link_pattern2 = "TwitterBooks",".com/" 
-##account3,link_pattern3 = "PenguinUKBooks","po.st/" 
-##account4,link_pattern4 = "nybooks","j.mp/"
-##account5,link_pattern5 = "nytimesbooks","nyti.ms/"
-##account6,link_pattern6 = "latimesbooks","lat.ms/"
-##account7,link_pattern7 = "goodreads",".ly/"
-##account8,link_pattern8 = "amazonbooks","amzn.to/"
-##account9,link_pattern9 = "BNBuzz","oak.ctx.ly/"
-##account10,link_pattern10 = "Powells","powells.us/"
+account1,link_pattern1 = "GuardianBooks","gu.com/" 
+account2,link_pattern2 = "TwitterBooks",".com/" 
+account3,link_pattern3 = "PenguinUKBooks","po.st/" 
+account4,link_pattern4 = "nybooks","j.mp/"
+account5,link_pattern5 = "nytimesbooks","nyti.ms/"
+account6,link_pattern6 = "latimesbooks","lat.ms/"
+account7,link_pattern7 = "goodreads",".ly/"
+account8,link_pattern8 = "amazonbooks","amzn.to/"
+account9,link_pattern9 = "BNBuzz","oak.ctx.ly/"
+account10,link_pattern10 = "Powells","powells.us/"
 
 
 pairs = [
-    [account1,link_pattern1],
-    [account2,link_pattern2],
-    [account3,link_pattern3],
-    [account4,link_pattern4],
-    [account5,link_pattern5],
-    [account6,link_pattern6],
-    [account7,link_pattern7],
-    [account8,link_pattern8],
-    [account9,link_pattern9],
+##    [account1,link_pattern1],
+##    [account2,link_pattern2],
+##    [account3,link_pattern3],
+##    [account4,link_pattern4],
+##    [account5,link_pattern5],
+##    [account6,link_pattern6],
+##    [account7,link_pattern7],
+##    [account8,link_pattern8],
+##    [account9,link_pattern9],
     [account10,link_pattern10]
     ]
 
@@ -185,8 +185,8 @@ def start_to_crawl(api,item_number,category,filename):
     return None
 
 
-api = generate_api(0,keys)
-start_to_crawl(api,3000,"Fashion","fashion.csv")
+api = generate_api(1,keys)
+start_to_crawl(api,3000,"Book","book.csv")
             
 
 
